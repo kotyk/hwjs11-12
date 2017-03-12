@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>hw-11-12</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="carousel-wrapper">
+		<div class="carousel-arrow-left"><span>Влево</span></div>
+		<div class="carousel-hider">
+			<ul  class="carousel-list">
+				<li class="carousel-element"><img src="img/1.png"><p>Описание 1</p></li>
+				<li class="carousel-element"><img src="img/2.png"><p>Описание 2</p></li>
+				<li class="carousel-element"><img src="img/3.png"><p>Описание 3</p></li>
+				<li class="carousel-element"><img src="img/4.png"><p>Описание 4</p></li>
+				<li class="carousel-element"><img src="img/5.png"><p>Описание 5</p></li>
+				<li class="carousel-element"><img src="img/6.jpg"><p>Описание 6</p></li>
+				<li class="carousel-element"><img src="img/7.jpg"><p>Описание 7</p></li>
+				<li class="carousel-element"><img src="img/8.jpg"><p>Описание 8</p></li>
+			</ul>
+		</div>
+		<div class="carousel-arrow-right"><span>Вправо</span></div>
+	</div>
+
+	<!--Template-->
+
+	<script type="text/template" id="my_profile">
+		<div class="template-wrapper">
+			<div class="picture">
+				<h1><%= name %></h1>
+				<img src="<%= photo.src %>" width="170px" alt="<%= photo.alt%>">
+			</div>
+			<div class="information">
+				<p class="photocaption"><%= position %></p>
+				<hr>
+				<h4><%= reasons %></h4>
+				<ul>
+					<% for (var i = 0; i < cause.length; i++) { 
+					%>	<li><%= cause[i] %></li>
+					<% } %>
+				</ul>
+				
+				<hr>
+				<h4><%= tel %></h4>
+				<p class="phone"><%= number %></p>
+				<hr>
+				<h4><%= vkontakte %></h4>
+				<a href="https://new.vk.com/id8779329"><%= vkontakte_link %></a>
+				<hr>
+				<h4><%= feedback %></h4>
+				<p class="feedback"><%= feedback_text %></p>
+
+			</div>
+
+		</div>
+	</script>
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.carousel.js"></script>
+	<script src="js/template.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

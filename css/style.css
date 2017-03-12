@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f6f4f6;
+}
+
+.carousel-wrapper {
+	width: 800px;
+	height: 150px;
+	margin: 30px auto;
+}
+
+.carousel-hider {
+	width: 600px;
+	overflow: hidden;
+	float: left;
+}
+
+.carousel-list {    
+	list-style: none;
+	width: 10000px;
+	padding: 0px;
+	position: relative;
+}
+
+.carousel-element {
+	display: block;
+	margin-right: 25px;
+	float: left;
+}
+
+.carousel-element img {
+	max-width: 100px;
+}
+
+.carousel-arrow-left, .carousel-arrow-right {
+	float: left;
+}
+
+.carousel-arrow-left, .carousel-arrow-right {
+	float: left;
+	display: block;
+	border: 1px solid grey;
+	background-color: lightgrey;
+	padding: 5px;
+	margin-top: 50px;
+}
+
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+	cursor: pointer;
+	background-color: grey;
+}
+
+.carousel-arrow-left {
+	margin-right: 25px;
+}
+
+.carousel-arrow-right {
+	margin-left: 25px;
+}
+
+.template-wrapper {
+	clear: both;
+	
+}
+
+h1 {
+	text-transform: uppercase;
+	font-family: Arial;
+	font-weight: bold;
+	margin: 10px auto;
+}
+
+.picture {
+	text-align: center;
+}
+
+p {
+	margin-top: 19px;
+	margin-bottom: 19px;
+}
+
+.information {
+	width: 500px;
+	margin: auto;
+}
+
+.photocaption {
+	color: #5e5e5f;
+	font-family: Arial;
+	font-size: 13px;
+}
+
+.reasons {
+	font-family: "MyriadProRegular", Arial, sans-serif;
+	font-size: 13px;
+}
+
+.phone {
+	margin-left: 37px;
+	font-family: "MyriadProRegular", Arial, sans-serif;
+	font-size: 13px;
+}
+
+ul {
+	padding-left: 40px;
+}
+
+hr {
+	margin: 10px auto;
+}
+
+h4 {
+	font-family: "Myriad Pro Bold", Arial, sans-serif;
+	font-weight: bold;
+}
+
+a {
+	margin-left: 37px;
+	font-family: "MyriadProRegular", Arial, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	color: #7593de;
+}
+
+.feedback {    
+	margin-left: 37px;
+	font-family: "MyriadProRegular", Arial, sans-serif;
+	font-size: 13px;
+}
+
+
+
