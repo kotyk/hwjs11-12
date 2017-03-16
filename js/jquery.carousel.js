@@ -1,6 +1,20 @@
 (function($){
-	$.fn.carousel = function(){
+	$.fn.carousel = function(options) {
 		
+		var defaults = {
+			leftUIElColor: 'red',
+			rightUIElColor: 'red',
+			fontSize: '10px'
+			
+		};
+
+
+		var settings = $.extend(defaults, options); 
+
+
+		var leftUIEl;
+		var rightUIEl;
+
 		$(function() {
 			var leftUIEl = $('.carousel-arrow-left');
 			var rightUIEl = $('.carousel-arrow-right');
